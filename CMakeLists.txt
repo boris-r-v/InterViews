@@ -1,0 +1,39 @@
+project(boost_v)
+cmake_minimum_required(VERSION 2.8)
+add_definitions(-std=c++11 -g)
+
+
+#add_executable("test1"  prc/test1.cpp)
+add_executable("test2"  prc/test2.cpp)
+add_executable("test3"  prc/test3.cpp)
+
+
+# - ниже прохождение теста на сертификатов
+#add_executable("main"  src/main.cpp)
+#add_executable("four1"  src/four1.cpp)
+#add_executable("four2"  src/four2.cpp)
+#add_executable("four3"  src/four3.cpp)
+#add_executable("four4"  src/four4.cpp)
+#add_executable("four5"  src/four5.cpp)
+#add_executable("main1"  src/main1.cpp)
+#add_executable("main2"  src/main2.cpp)
+#add_executable("main3"  src/main3.cpp)
+#add_executable("main4"  src/main4.cpp)
+#add_executable("main5"  src/main5.cpp)
+#add_executable("main6"  src/main6.cpp)
+#add_executable("main7"  src/main7.cpp)
+#add_executable("main8"  src/main8.cpp)
+#add_executable("main9"  src/main9.cpp)
+#add_executable("main10"  src/main10.cpp)
+#add_executable("main11"  src/main11.cpp)
+#add_executable("main12"  src/main12.cpp)
+#add_executable("main13"  src/main13.cpp)
+#add_executable("main14"  src/main14.cpp)
+#add_executable("main15"  src/main15.cpp) 
+#add_executable("main16"  src/main16.cpp)
+#add_executable("main17"  src/main17.cpp)
+#add_executable("main18"  src/main18.cpp)
+#add_executable("main19"  src/main19.cpp)
+
+
+
