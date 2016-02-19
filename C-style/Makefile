@@ -1,4 +1,5 @@
-all: search.c reuseAPI.c
+all: search.c reuseAPI.c ptr.c
+	gcc ptr.c -o ptr
 	gcc search.c -o search
 	gcc reuseAPI.c -o reuseAPI
 

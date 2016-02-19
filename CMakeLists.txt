@@ -1,12 +1,19 @@
 project(boost_v)
 cmake_minimum_required(VERSION 2.8)
-add_definitions(-std=c++11 -g)
-
+add_definitions(-std=c++11 -g -pthread)
+find_package (Threads)
 
 #add_executable("test1"  prc/test1.cpp)
 add_executable("test2"  prc/test2.cpp)
 add_executable("test3"  prc/test3.cpp)
 
+add_executable("async"  future/async.cpp)
+add_executable("future"  future/future.cpp)
+add_executable("deferred"  future/deferred.cpp)
+
+target_link_libraries("deferred" ${CMAKE_THREAD_LIBS_INIT})
+target_link_libraries("future"  ${CMAKE_THREAD_LIBS_INIT})
+target_link_libraries("async"  ${CMAKE_THREAD_LIBS_INIT})
 
 # - ниже прохождение теста на сертификатов
 #add_executable("main"  src/main.cpp)
